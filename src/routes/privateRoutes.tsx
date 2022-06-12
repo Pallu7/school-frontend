@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import Classes from '../modules/classes/pages/Classes'
+import {Classes}  from '../modules/classes/pages/Classes'
+
 import Home from '../modules/home'
 import School from '../modules/school'
 import Dashboard from '../shared/dashboard/Dashboard'
@@ -10,6 +11,7 @@ interface PrivateRoutesProps {
 }
 
 const PrivateRoute = (props: PrivateRoutesProps) => {
+	
 	const { isLoggedIn } = props
 	const routeToAuth = 'auth'
 

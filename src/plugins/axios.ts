@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = process.env.BASE_URL;
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 const token = localStorage.getItem('SCHOOL_ACCESS_TOKEN');
 axios.defaults.headers.common.Authorization = token
